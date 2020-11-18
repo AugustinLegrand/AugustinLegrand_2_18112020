@@ -1,0 +1,524 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+
+.header {
+  display: grid;
+  grid-template-areas: "LOGO REG REG"
+                        "MENU MENU MENU";
+                        
+}
+
+.header-logo {
+  padding: 15px;
+  display: grid;
+  grid-area: LOGO;
+}
+
+.header-register {
+  padding: 15px;
+  display: grid;
+  grid-area: REG;
+  align-items: center;
+  justify-content: right;
+  text-decoration: none;
+  font-weight: bold;
+  color: blue;
+}
+
+.header-nav {
+  padding: 0;
+  display: grid;
+  grid-area: MENU;
+}
+
+.header-nav ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  /*padding-right: 49px;*/
+  list-style-type: none;
+  width: 100%;
+}
+
+.header-nav ul li {
+  width: 50%;
+  padding-bottom: 5px;
+  border-bottom: 5px solid gray;
+}
+
+.header-nav ul a {
+  display: flex;
+ justify-content: center;
+  text-decoration: none;
+  color: grey;
+  
+}
+
+.header-nav ul li:hover, .header-nav ul li:focus {
+  border-bottom: 5px solid blue;
+}
+
+/**
+* Search FORM
+**/
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-form-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(199, 199, 199);
+  border-radius: 1rem 0 0 1rem;
+  width: 40px;
+  height: 40px;
+  font-weight: bold;
+}
+
+.search-form-input {
+  height: 40px;
+  border: none;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-weight: bold;
+  border: 1px solid rgb(199, 199, 199);
+  border-right: none;
+  width: 80%;
+}
+
+.search-form-button {
+  background-color: rgb(75, 75, 231);
+  height: 40px;
+  width: 44px;
+  color: #ffff;
+  border: none;
+  border-radius: 1rem 1rem 1rem 1rem;
+}
+
+.search-form-button span {
+  display: none;
+}
+
+/**
+* Search Filters
+**/
+
+.search-filter {
+  display: flex;
+  flex-flow: row wrap;
+  padding-top: 15px;
+}
+
+.search-filter h2 {
+  width: 100rem;
+}
+
+.search-filter-item {
+  display: flex;
+  align-items: center;
+  border: 1px solid rgb(199, 199, 199);
+  border-radius: 2rem 2rem 2rem 2rem;
+  border-left: none;
+  margin: 5px;
+  text-decoration: none;
+  color: black;
+  outline: none;
+}
+
+.search-filter-item:hover > .search-filter-item-icon {
+  background-color: rgb(180, 255, 255);
+}
+
+.search-filter-item-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(200, 238, 248);
+  color: #0065FC;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-weight: bold;
+}
+.search-filter-item p {
+  margin: 0;
+  padding: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+/**
+* Search Footer
+**/
+
+.search-footer {
+  display: flex;
+}
+
+.search-footer-icon {
+  display: flex;
+  align-items: center;
+}
+
+.search-footer-icon i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(199, 199, 199);
+  color: rgb(75, 75, 231);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  font-size: 0.8em;
+}
+
+.search-footer-description {
+  display: flex;
+  align-content: center;
+  padding-left: 5px;
+}
+
+.search-main {
+  padding: 15px;
+}
+
+/**
+* Populaires
+**/
+
+.populaires {
+  padding: 15px;
+  background-color: rgb(241, 241, 241);
+}
+
+.header-populaires {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-populaires-icon {
+  display: flex;
+  align-self: center;
+  font-size: 1.5em;
+}
+
+.list-populaires {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.populaires-item {
+  height: 8rem;
+  margin: 10px;
+  width: 90%;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #FDFDFD;
+  border-radius: 1rem 1rem 1rem 1rem;
+}
+
+.header-populaires-item {
+  display: flex;
+  flex: 1;
+  width: 10rem;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+
+.header-populaires-image {
+  border-radius: 1rem 0 0 1rem;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.populaires-item-body {
+  display: flex;
+  flex: 2;
+  flex-flow: column;
+  padding-left: 1.2rem;
+  font-size: 0.8em;
+}
+
+.stars {
+  color: #0065FC;
+}
+
+.hebergements {
+  padding: 15px;
+}
+
+.list-hebergements {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.hebergements-item {
+  width: 100%;
+  border-radius: 1rem 1rem 1rem 1rem;
+  box-shadow: 2px 2px 2px 2px #DEEBFF;
+  background-color: #FDFDFD;
+  margin-bottom: 15px;
+}
+
+.header-hebergements-item {
+  display: flex;
+  height: 7rem;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+
+.header-hebergements-image {
+  border-radius: 1rem 1rem 0 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.hebergements-item-body {
+  padding: 15px;
+  margin: 0;
+}
+
+.hebergements-item-body h3, .hebergements-item-body p {
+  margin: 0;
+}
+
+.footer-hebergements a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-top: 15px;
+  padding-top: 15px;
+}
+
+.main-activites {
+  padding: 15px;
+}
+
+.list-activites {
+  display: flex;
+  flex-direction: column;
+}
+
+.activites-item {
+  width: 100%;
+  border-radius: 1rem 1rem 1rem 1rem;
+  box-shadow: 2px 2px 2px 2px #DEEBFF;
+  margin-bottom: 15px;
+}
+
+.header-activites-item {
+  display: flex;
+  height: 7rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-activites-image {
+  border-radius: 1rem 1rem 0 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.activites-description {
+  padding-left: 15px;
+  font-weight: bold;
+}
+
+.footer {
+  background-color: rgb(241, 241, 241);
+  padding: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .list-hebergements {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 5px;
+    justify-content: center;
+  }
+  .hebergements-item {
+    width: 40%;
+    margin: 15px;
+  }
+
+  .hebergements-item-body {
+    background-color: #FDFDFD;
+  }
+
+  .list-activites {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  
+  .activites-item {
+    width: 30%;
+    border-radius: 1rem 1rem 1rem 1rem;
+    box-shadow: 2px 2px 2px 2px #DEEBFF;
+    margin-bottom: 15px;
+    margin: 10px;
+  }
+
+  .activites-description {
+    padding-left: 15px;
+    font-weight: bold;
+    font-size: 0.8em;
+  }
+  
+}
+
+@media screen and (min-width: 1024px) {
+
+  .search-form-button {
+    width: 5rem;
+  }
+
+  .search-form-button i {
+    display: none;
+  }
+
+  .search-form-button span {
+    display: block;
+  }
+
+  .search-main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .search-form {
+    width: 40%;
+  }
+
+  .search-filter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 35px;
+  }
+
+  .search-filter h2 {
+    display: flex;
+    align-items: center;
+    width: 5rem;
+    height: 0.8rem;
+  }
+
+  .main-hebergements-populaires {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+  }
+
+  .main {
+    margin: 15px;
+  }
+
+  .main-hebergements-populaires {
+    margin: 5px;
+  }
+
+  .populaires {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding-bottom: 15px;
+    margin: 15px;
+  }
+  .hebergements {
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    background-color: rgb(241, 241, 241);
+    margin: 15px;
+  }
+
+  .hebergements-item {
+    width: 28%;
+  }
+
+  .header-hebergements {
+    padding-left: 15px;
+  }
+
+  .footer-hebergements {
+    display: flex;
+    padding-bottom: 15px;
+    padding-left: 15px;
+  }
+
+  .list-activites {
+    display: grid;
+    grid-template-areas:
+    "VP FP PNC NDG"
+    "VP IF PNC PL";
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+  }
+
+  .activites-item {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+
+  .articleitem1 {
+    display: grid;
+    grid-area: VP;
+  }
+
+  .articleitem2 {
+    display: grid;
+    grid-area: FP;
+  }
+
+  .articleitem3 {
+    display: grid;
+    grid-area: IF;
+  }
+
+  .articleitem4 {
+    display: grid;
+    grid-area: PNC;
+  }
+
+  .articleitem5 {
+    display: grid;
+    grid-area: NDG;
+  }
+
+  .articleitem6 {
+    display: grid;
+    grid-area: PL;
+  }
+
+  .articleitem1 .header-activites-item {
+    height: 18rem;
+  }
+
+  .articleitem4 .header-activites-item {
+    height: 18rem;
+  }
+
+}

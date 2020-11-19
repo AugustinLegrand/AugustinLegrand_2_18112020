@@ -345,7 +345,7 @@ body {
   padding: 15px;
 }
 
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .list-hebergements {
     display: flex;
     flex-flow: row wrap;
@@ -383,7 +383,7 @@ body {
   
 }
 
-@media screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) {
 
   .search-form-button {
     width: 5rem;

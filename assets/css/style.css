@@ -267,6 +267,10 @@ body {
   font-size: 0.8em;
 }
 
+.star-far {
+  color: gray;
+}
+
 .hebergements {
   padding: 15px;
 }
@@ -413,24 +417,33 @@ body {
   .header {
     display: grid;
     grid-template-areas: "LOGO MENU REG";
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 1fr;
     padding-left: 25px;
     padding-right: 25px;
+    padding-bottom: 0;
+    max-height: 75px;
   }
 
   .header-nav {
     display: flex;
     align-items: center;
   }
-
-  .header-nav ul li {
-    border: none;
-    padding: 0;
+  
+  .header-nav ul {
+    margin: 0;
   }
 
+  .header-nav ul li {
+    display: flex;
+    justify-content: center;
+    border: none;
+    padding-top: 50px;
+    margin-bottom: 50px;
+    
+  }
   .header-nav ul li:hover, .header-nav ul li:focus {
-    border-top: 5px solid blue;
-    border-bottom: 0;
+    border-bottom: none;
+    border-top: 2px solid blue;
   }
 
   .header-register {

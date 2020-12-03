@@ -507,18 +507,15 @@ body {
     height: 0.8rem;
   }
 
-  .main__hebergements__populaires {
+  .hosting__popular {
     display: flex;
     justify-content: space-evenly;
     flex-direction: row-reverse;
+    margin: 5px;
   }
 
   .main {
     margin: 15px;
-  }
-
-  .main-hebergements-populaires {
-    margin: 5px;
   }
 
   .populaires {
